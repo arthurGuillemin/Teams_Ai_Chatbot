@@ -1,0 +1,64 @@
+{
+	"$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+	"version": "2.0.0",
+	"manifestVersion": "1.17",
+	"id": "3b080caf-e84b-4a42-ae51-93280283de59",
+	"name": {
+	  "short": "Bmx and Docker helper",
+	  "full": ""
+	},
+	"developer": {
+	  "name": "Arthur Guillemin",
+	  "mpnId": "",
+	  "websiteUrl": "https://www.example.com",
+	  "privacyUrl": "https://www.example.com/termofuse",
+	  "termsOfUseUrl": "https://www.example.com/privacy"
+	},
+	"description": {
+	  "short": "Short description",
+	  "full": "Un chatbot Teams intégré avec la fonctionnalité RAG (Retrieval-Augmented Generation) utilisant Teams Toolkit, LangChain, et MongoDB pour fournir des réponses enrichies et contextuelles. Le rag ne fournis que des informations sur le bmx"
+	},
+	"icons": {
+	  "outline": "outline.png",
+	  "color": "color.png"
+	},
+	"accentColor": "#FFFFFF",
+	"bots": [
+	  {
+		"botId": "3ae6295f-70df-427d-bdf6-d6fb193b3a89",
+		"scopes": [
+		  "personal"
+		],
+		"isNotificationOnly": false,
+		"supportsCalling": false,
+		"supportsVideo": false,
+		"supportsFiles": false
+	  }
+	],
+	"validDomains": [],
+	"webApplicationInfo": {
+	  "id": "4e6b4c57-92b0-429e-bff7-8329ea6543ed"
+	},
+	"authorization": {
+	  "permissions": {
+		"resourceSpecific": [
+		  {
+			"name": "Chat.Manage.Chat",
+			"type": "Application"
+		  },
+		  {
+			"name": "ChatMember.Read.Chat",
+			"type": "Application"
+		  },
+		  {
+			"name": "ChatMessage.Read.Chat",
+			"type": "Application"
+		  },
+		  {
+			"name": "ChatMessage.Send.Chat",
+			"type": "Application"
+		  }
+		]
+	  }
+	}
+  }
